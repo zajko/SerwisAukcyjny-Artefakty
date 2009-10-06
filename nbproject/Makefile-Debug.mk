@@ -27,7 +27,8 @@ include Makefile
 OBJECTDIR=build/Debug/${PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/main.o
 
 # C Compiler Flags
 CFLAGS=
@@ -48,7 +49,12 @@ LDLIBSOPTIONS=
 
 dist/Debug/${PLATFORM}/test: ${OBJECTFILES}
 	${MKDIR} -p dist/Debug/${PLATFORM}
-	${LINK.c} -o dist/Debug/${PLATFORM}/test ${OBJECTFILES} ${LDLIBSOPTIONS} 
+	${LINK.cc} -o dist/Debug/${PLATFORM}/test ${OBJECTFILES} ${LDLIBSOPTIONS} 
+
+${OBJECTDIR}/main.o: main.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

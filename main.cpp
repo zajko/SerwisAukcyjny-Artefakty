@@ -10,8 +10,11 @@
 /*
  * 
  */
+using namespace std;
 int main(int argc, char** argv) {
     cout<<"Hello, fucks !";
+    int u = 7;
+    cout<<endl<<u;
     return (EXIT_SUCCESS);
 }
 
