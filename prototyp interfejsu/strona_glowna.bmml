@@ -9,7 +9,7 @@
       <controlProperties>
         <text>Zaloguj%20si%u0119%2C%20Nie%20pami%u0119tasz%20hasla%3F%2C%20Zarejestruj%20si%u0119</text>
         <size>9</size>
-        <hrefs>logowanie%26bm%3Blogowanie.bmml%26bm%3Blogowanie.bmml%26bm%3Blogowanie.bmml%2C%2C</hrefs>
+        <hrefs>logowanie%26bm%3Blogowanie.bmml%26bm%3Blogowanie.bmml%26bm%3Blogowanie.bmml%2C%2Crejestracja%20u%u017Cytkownika%26bm%3Brejestracja%20u%u017Cytkownika.bmml%26bm%3Brejestracja%20u%u017Cytkownika.bmml%26bm%3Brejestracja%20u%u017Cytkownika.bmml</hrefs>
         <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22612%2C77%2C663%2C96%22%20href%3D%22logowanie.bmml%22%20alt%3D%22logowanie%22%20id%3D%2212_0%22/%3E%0A</map>
       </controlProperties>
     </control>
